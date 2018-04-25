@@ -1,0 +1,23 @@
+{
+  "name": "simple-mozilla-site",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf public/images public/styles",
+    "copy": "cp -r images public/images && cp -r styles public/styles",
+    "deploy": "npm run clean && npm run copy && firebase deploy --only hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovrmrw/beginner-html-site-styled.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ovrmrw/beginner-html-site-styled/issues"
+  },
+  "homepage": "https://github.com/ovrmrw/beginner-html-site-styled#readme"
+}
