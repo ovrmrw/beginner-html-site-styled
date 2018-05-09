@@ -3,6 +3,33 @@
   <head>
     <meta charset="utf-8">
 
+    <script type="text/javascript">
+      /**
+       * ADPLAN v7 Page View Tag
+       * Opt, Inc. All rights reserved.
+       */
+      if (!window._adp) { window._adp = []; }
+      window._adp.push({
+        emailOrUserIdForMatching: null, // クロスデバイス用のメールアドレスまたは会員ID
+        title: null, // イベント発生ページのページタイトル（設定しない場合自動取得）
+        locationUrl: null, // イベント発生ページのURL（設定しない場合自動取得）
+        s: "ws",
+        a: "203",
+        u: "https://a203.tracker.adplan7.com/ws/v/j/203",
+        db: "https://a203.tracker.adplan7.com/db/pb/203",
+        d: "https://a203.tracker.adplan7.com/",
+        cd: ["."]
+      });
+      (function(t) {
+        var i = document.createElement(t), s;
+        i.type = "text/javascript";
+        i.src = "https://widget.adplan7.com/s/1.0/ws.js";
+        i.charset = "UTF-8";
+        i.async = true;
+        s = document.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(i, s);
+      })("script");
+    </script>
     <!-- GTMタグを設置 -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,8 +38,8 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-WP2SWHS');</script>
     <!-- End Google Tag Manager -->
-
-    <title>Test page (GTM)</title>
+    
+    <title>Test page (PV D:OFF)</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
   </head>

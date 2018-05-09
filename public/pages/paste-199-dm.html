@@ -3,6 +3,28 @@
   <head>
     <meta charset="utf-8">
 
+    <script type="text/javascript">
+      /**
+       * ADPLAN v7 Direct Measurement Tag
+       * Opt, Inc. All rights reserved.
+       */
+      if (!window._adp) { window._adp = []; }
+      window._adp.push({
+        s: "dm",
+        a: "199",
+        d: "https://a199.tracker.adplan7.com/",
+        cd: ["."]
+      });
+      (function(t) {
+        var i = document.createElement(t), s;
+        i.type = "text/javascript";
+        i.src = "https://widget.adplan7.com/s/1.0/dm.js";
+        i.charset = "UTF-8";
+        i.async = true;
+        s = document.getElementsByTagName(t)[0];
+        s.parentNode.insertBefore(i, s);
+      })("script");
+    </script>
     <!-- GTMタグを設置 -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -12,7 +34,7 @@
       })(window,document,'script','dataLayer','GTM-WP2SWHS');</script>
     <!-- End Google Tag Manager -->
 
-    <title>Test page (GTM)</title>
+    <title>Test page (DM D:ON)</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
   </head>
